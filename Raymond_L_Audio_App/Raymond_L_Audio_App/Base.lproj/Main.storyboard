@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Raymond_L_Audio_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark souls 3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="saT-Kw-icJ">
+                                <rect key="frame" x="20" y="203" width="374" height="367"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="367" id="3Ix-6u-a2l"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAw-t4-1sp">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iWz-8G-LtI"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="pause" id="mur-vz-sTz">
+                                        <connections>
+                                            <action selector="pauseButton:" destination="BYZ-38-t0r" id="BDe-4s-x85"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Grx-x8-l9D"/>
+                                    <barButtonItem systemItem="play" id="jtK-su-pxP">
+                                        <connections>
+                                            <action selector="playButton:" destination="BYZ-38-t0r" id="aAz-BX-WcL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="X7w-zp-zfm"/>
+                                    <barButtonItem systemItem="stop" id="DMP-1j-ziO">
+                                        <connections>
+                                            <action selector="stopButton:" destination="BYZ-38-t0r" id="Jin-x9-JqC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abyss Watchers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfh-Af-eBM">
+                                <rect key="frame" x="41" y="44" width="353" height="117"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Composed by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUn-B2-M89">
+                                <rect key="frame" x="126" y="608" width="182" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yuka Kitamura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Waw-W5-KyN">
+                                <rect key="frame" x="50" y="670" width="335" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="saT-Kw-icJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2LK-NE-Qu9"/>
+                            <constraint firstItem="dAw-t4-1sp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="59C-57-D22"/>
+                            <constraint firstItem="dAw-t4-1sp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="89v-p9-shc"/>
+                            <constraint firstItem="Waw-W5-KyN" firstAttribute="top" secondItem="lUn-B2-M89" secondAttribute="bottom" constant="27" id="8Di-jJ-kiT"/>
+                            <constraint firstItem="tfh-Af-eBM" firstAttribute="centerX" secondItem="lUn-B2-M89" secondAttribute="centerX" id="AFl-Pb-tcd"/>
+                            <constraint firstItem="saT-Kw-icJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QNO-2h-ds2"/>
+                            <constraint firstItem="lUn-B2-M89" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="XOb-Cp-UGa"/>
+                            <constraint firstItem="tfh-Af-eBM" firstAttribute="trailing" secondItem="saT-Kw-icJ" secondAttribute="trailing" id="Z55-09-Biy"/>
+                            <constraint firstItem="Waw-W5-KyN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="h93-8Y-h1f"/>
+                            <constraint firstItem="lUn-B2-M89" firstAttribute="top" secondItem="saT-Kw-icJ" secondAttribute="bottom" constant="38" id="kU6-Yo-ey8"/>
+                            <constraint firstItem="saT-Kw-icJ" firstAttribute="centerX" secondItem="dAw-t4-1sp" secondAttribute="centerX" id="p9L-UX-J0Z"/>
+                            <constraint firstItem="saT-Kw-icJ" firstAttribute="top" secondItem="tfh-Af-eBM" secondAttribute="bottom" constant="42" id="r22-DI-b5p"/>
+                            <constraint firstItem="lUn-B2-M89" firstAttribute="centerX" secondItem="Waw-W5-KyN" secondAttribute="centerX" id="tIq-HS-cbd"/>
+                            <constraint firstItem="tfh-Af-eBM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wcg-sw-hWL"/>
+                            <constraint firstItem="saT-Kw-icJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="wu5-ZT-iRt"/>
+                            <constraint firstItem="tfh-Af-eBM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="x4K-AP-9VF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dark souls 3.jpeg" width="300" height="168"/>
+    </resources>
+</document>
